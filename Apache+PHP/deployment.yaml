@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: apache
+  name: apache
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: apache
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: apache
+    spec:
+      containers:
+        - image: larian147/apacheimg:v1
+          name: apache  
+          resources: {}
+          volumeMounts:
+            - name: config-volume
+              mountPath: /var/lib/docker
+      volumes:
+        - name: config-volume
+          configMap:
+            name: apache-config  # Corelează numele ConfigMap-ului aici
+status: {}
