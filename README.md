@@ -24,7 +24,6 @@ To create Kubernetes manifest objects for your application, follow these steps:
 
 To test the LoadBalancer service of the Kubernetes cluster, follow these steps:
 
-1. Generate multiple instances of the service using the syntax and traffic simulation provided in the initial deployment.
-2. Use the Python-based GUI to monitor system resources and traffic on each instance.
-3. Set and reset nodes as needed using the included bash scripts.
+1. Use the Python-based GUI to monitor system resources and traffic on each instance.
+2. Set and reset nodes as needed using the included bash scripts.
 
