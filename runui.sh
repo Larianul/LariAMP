@@ -1,3 +1,3 @@
 #! /bin/bash
 
-python3 uiv3.py
+python3 uiv3s.py

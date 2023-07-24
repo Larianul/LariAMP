@@ -23,7 +23,7 @@ terminal_frame1.update()
 terminal1 = tk.Text(terminal_frame1, wrap=tk.WORD, bg="#6E99A7")
 terminal1.pack(fill=tk.BOTH, expand=True)
 
-# Aici adăugăm al doilea terminal
+# Aici adaugam al doilea terminal
 terminal_frame2 = tk.Frame(main_frame, bg="#f2f2f2")
 terminal_frame2.grid(row=1, column=0, padx=2, pady=2, sticky="nsew") 
 
@@ -90,7 +90,7 @@ def run_script8():
 button_frame = tk.Frame(main_frame, bg="#305966")
 button_frame.pack(side=tk.RIGHT, )
 
-# Adăugarea butoanelor în bara de butoane
+# Adaugarea butoanelor in bara de butoane
 button1 = tk.Button(button_frame, text="Start/Restart Apache", command=apachelogs,bg='#599CB1')
 button1.pack(side=tk.TOP)
 
@@ -115,9 +115,9 @@ button7.pack(side=tk.TOP)
 #button8 = tk.Button(button_frame, text="Open SQL", command=run_script8,bg='#599CB1')
 #button8.pack(side=tk.TOP)
 
-buttons = [button1, button2, button3, button4, button5, button6, button7] #button8] # Adăugăm noile butoane în listă,  
+buttons = [button1, button2, button3, button5, button6, button7] #button8] button4, #  add noile butoane in lista,  
 
-# Adăugăm câteva linii pentru a se asigura că ambele frame-uri de terminal primesc spațiu egal în grid
+# Adaugam cateva linii pentru a se asigura ca ambele frame-uri de terminal primesc spatiu egal in  grid
 main_frame.rowconfigure(0, weight=1)
 main_frame.rowconfigure(1, weight=1)
 main_frame.columnconfigure(0, weight=1)
